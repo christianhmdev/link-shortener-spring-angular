@@ -1,0 +1,116 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '~@fortawesome/fontawesome-free/css/v4-shims.min.css';
+
+body.dark-mode {
+    background-color: #111827;
+
+}
+
+body.dark-mode .card {
+    background-color: #1f2937;
+    color: #bcbec2;
+
+}
+
+
+body.dark-mode .links-page {
+    background-color: #1f2937 !important;
+    color: #bcbec2 !important;
+    border-color: #4d4d4d !important;
+    box-shadow: none !important;
+    outline: none !important;
+
+}
+
+body.dark-mode .my-urls,
+body.dark-mode .link-url,
+body.dark-mode .short-url {
+    background-color: #1f2937;
+    color: #bcbec2 !important;
+}
+
+body.dark-mode .card input,
+body.dark-mode .card textarea,
+body.dark-mode .card select {
+    background-color: #1f2937;
+    color: #bcbec2;
+    border-color: #4d4d4d !important;
+}
+
+
+body.dark-mode .card input::placeholder,
+body.dark-mode .card textarea::placeholder,
+body.dark-mode .card select::placeholder {
+    color: #bcbec2;
+
+}
+
+
+body.dark-mode .input-group-text {
+    background-color: #4d4d4d !important;
+    color: #1f2937 !important;
+    border-color: #4d4d4d !important;
+}
+
+body.dark-mode .card input:focus,
+body.dark-mode .card textarea:focus,
+body.dark-mode .card select:focus {
+    border-color: #4d4d4d;
+    box-shadow: none;
+    outline: none;
+
+}
+
+body.dark-mode .title-shortener,
+body.dark-mode .title-login,
+body.dark-mode .title-signup,
+body.dark-mode .signup,
+body.dark-mode .login,
+body.dark-mode .add-global {
+    color: #bcbec2 !important;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.input {
+    /* color: black; */
+    font-weight: 100;
+}
+
+.button {
+    font-weight: 900;
+}
+
+.form-headline {
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.input-alert {
+    color: rgb(230, 30, 30);
+    font-weight: 400;
+    margin-left: 0.5rem;
+}
+
+.toast {
+    position: relative;
+    margin: 0.5em;
+}
+
+.toast-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1200;
+}

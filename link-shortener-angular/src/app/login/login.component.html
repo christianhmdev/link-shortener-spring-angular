@@ -1,0 +1,40 @@
+<div class="shortener mx-auto my-auto rounded-5 p-3 w-50 rounded">
+    <div class="card" style="border-radius: 1rem;">
+        <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <!-- Cambia la URL de la imagen según tus necesidades -->
+                <img src="../../../assets/login.jpg" alt="login form" class="img-fluid"
+                    style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+                    <form #formUser="ngForm" method="post" (ngSubmit)="logIn(formUser)"
+                        class="container d-flex flex-column w-100 gap-4">
+                        <p class="title-login form-headline text-primary text-center">Log in to URL Shortener</p>
+                        <div class="input-group">
+                            <span class="input-group-text bg-primary text-white"><i
+                                    class="fa-solid fa-envelope"></i></span>
+                            <input type="text" name="email" placeholder="Email"
+                                class="form-control form-control-lg border" required ngModel>
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text bg-primary text-white"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="password" placeholder="Password"
+                                class="form-control form-control-lg border" required ngModel>
+                        </div>
+
+                        <button type="submit" class="button btn btn-primary btn-lg w-30"><i
+                                class="fa-solid fa-right-to-bracket"></i>&nbsp;Log in</button>
+
+                        <div class="signup text-center">
+                            <p>Don't have an account? <a class="signup-link" routerLink="/app-signup">Sign up</a></p>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

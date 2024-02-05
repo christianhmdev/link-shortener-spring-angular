@@ -1,0 +1,10 @@
+.app {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}

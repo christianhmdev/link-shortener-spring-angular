@@ -1,0 +1,47 @@
+<div class="shortener mx-auto my-auto rounded-5 p-3 w-50 rounded">
+    <div class="card" style="border-radius: 1rem;">
+        <div class="row g-0">
+            <div class="col-md-12">
+                <div class="card-body p-4 p-lg-5 text-black">
+                    <form #formLink="ngForm" method="post" (ngSubmit)="shortLink(formLink)"
+                        class="container d-flex flex-column w-100 gap-4">
+
+                        <p class="title-shortener form-headline text-primary text-center">Paste the URL to be shortened
+                        </p>
+
+                        <div class="input-group">
+                            <span class="input-group-text bg-primary text-white"><i class="fa-solid fa-link"></i></span>
+                            <input type="text" name="fullLink" placeholder="Enter URL to short"
+                                class="form-control form-control-lg border" required ngModel #link="ngModel">
+                        </div>
+
+                        <div *ngIf="link.value == '' && (link.dirty || link.touched)" class="input-alert">
+                            You need to add a link
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text bg-primary text-white"><i
+                                    class="fa-solid fa-user-plus"></i></span>
+                            <input type="text" name="alias" placeholder="Alias (optional)"
+                                class="form-control form-control-lg border" ngModel>
+                        </div>
+
+                        <div *ngIf="getToken() != null" class="text-white">
+                            <div class="form-check fw-bold">
+                                <input mdbCheckbox [(ngModel)]="isChecked" name="isChecked" class="form-check-input"
+                                    type="checkbox" id="flexCheckDefault">
+                                <label class="add-global form-check-label text-dark" for="flexCheckDefault">Add to global
+                                    links</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" [disabled]="link.value == ''" class="button btn btn-primary btn-lg w-30">
+                            <i class="fa-solid fa-link"></i>&nbsp;Short URL
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

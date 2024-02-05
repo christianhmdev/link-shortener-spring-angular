@@ -1,0 +1,18 @@
+.signup {
+
+  min-width: 20rem;
+}
+
+.signup-image {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-image-icon {
+  height: 7rem;
+}
+
+.login-link {
+  text-decoration: none;
+
+}

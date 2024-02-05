@@ -1,0 +1,22 @@
+<nav class="navbar" [ngClass]="{'dark-mode': isDarkMode}">
+    <ul>
+        <li><a class="nav-link" routerLink="/app-shortener" routerLinkActive="active" ariaCurrentWhenActive="page"><i
+                    class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+        <li><a class="nav-link" routerLink="/app-myurls" routerLinkActive="active" ariaCurrentWhenActive="page"><i
+                    class="fa-solid fa-link"></i>&nbsp;My urls</a></li>
+        <div *ngIf="getToken() == null; else logined" class="d-flex">
+            <li><a class="nav-link" routerLink="/app-login" routerLinkActive="active" ariaCurrentWhenActive="page"><i
+                        class="fa-solid fa-right-to-bracket"></i>&nbsp;Log in</a></li>
+            <li><a class="nav-link" routerLink="/app-signup" routerLinkActive="active" ariaCurrentWhenActive="page"><i
+                        class="fa-solid fa-user-plus"></i>&nbsp;Sign
+                    up</a></li>
+            
+        </div>
+        <ng-template #logined>
+            <li><a class="nav-link" (click)="logOut()" routerLinkActive="active" ariaCurrentWhenActive="page"><i
+                        class="fa-solid fa-right-to-bracket"></i>&nbsp;Log
+                    out</a></li>
+        </ng-template>
+        <li><a class="nav-link" (click)="toggleDarkMode()"><i class="{{ getDarkModeIcon() }}"></i></a></li>
+    </ul>
+</nav>

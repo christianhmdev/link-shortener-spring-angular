@@ -1,0 +1,17 @@
+.urls-table {
+    border-radius: 1rem !important;
+}
+
+.myurls {
+    min-width: 24rem;
+}
+
+.refresh {
+    display: flex;
+    margin: 0 auto;
+    font-size: larger;
+}
+
+.delete-all {
+    margin-right: 1rem;
+}

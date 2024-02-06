@@ -49,7 +49,7 @@ git clone https://github.com/christianhmdev/link-shortener-spring-angular
    - Run `ng serve`.
 
 3. Access the application in your browser:
-   - Backend: [http://localhost:8080/](http://localhost:8080/) (for API documentation Swagger UI, [http://localhost:8080/swagger-ui/index.htm](http://localhost:8080/swagger-ui/index.html))
+   - Backend: [http://localhost:8080/](http://localhost:8080/) (for API documentation Swagger UI, [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.htm))
    - Frontend: [http://localhost:4200](http://localhost:4200) (the Angular client application)
 
 
